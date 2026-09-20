@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": ["src/**/*.ts"],
+  "references": [
+    { "path": "../../packages/decision/tsconfig.build.json" },
+    { "path": "../../packages/decision-typesafe/tsconfig.build.json" },
+    { "path": "../../packages/decision-testing/tsconfig.build.json" }
+  ]
+}

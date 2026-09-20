@@ -1,0 +1,9 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/decision/tsconfig.build.json" },
+    { "path": "./packages/decision-typesafe/tsconfig.build.json" },
+    { "path": "./packages/decision-testing/tsconfig.build.json" },
+    { "path": "./examples/support-triage/tsconfig.json" }
+  ]
+}

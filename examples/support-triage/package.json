@@ -1,0 +1,19 @@
+{
+  "name": "nifra-decisions-support-triage",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@nifrajs/core": "^3.3.0",
+    "@nifrajs/decision": "workspace:*",
+    "@nifrajs/decision-testing": "workspace:*",
+    "@nifrajs/decision-typesafe": "workspace:*",
+    "@nifrajs/schema": "^3.3.0"
+  },
+  "devDependencies": {
+    "@sinclair/typebox": "^0.34.52"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "bun test"
+  }
+}

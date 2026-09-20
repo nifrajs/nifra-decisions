@@ -1,0 +1,43 @@
+{
+  "name": "@nifrajs/decision-typesafe",
+  "version": "0.1.0",
+  "description": "TypeSafe API provider for Nifra Decisions.",
+  "keywords": [
+    "nifra",
+    "typesafe",
+    "jev",
+    "ai",
+    "decisions"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nifrajs/nifra-decisions.git",
+    "directory": "packages/decision-typesafe"
+  },
+  "dependencies": {
+    "@nifrajs/decision": "workspace:*"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "bun test"
+  }
+}

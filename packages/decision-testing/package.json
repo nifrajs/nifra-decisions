@@ -1,0 +1,43 @@
+{
+  "name": "@nifrajs/decision-testing",
+  "version": "0.1.0",
+  "description": "Deterministic fake and replay providers for Nifra Decisions.",
+  "keywords": [
+    "nifra",
+    "testing",
+    "ai",
+    "replay",
+    "evaluations"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nifrajs/nifra-decisions.git",
+    "directory": "packages/decision-testing"
+  },
+  "dependencies": {
+    "@nifrajs/decision": "workspace:*"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "bun test"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "@nifrajs/decision",
+  "version": "0.1.0",
+  "description": "Typed, confidence-aware semantic decisions for Nifra applications.",
+  "keywords": [
+    "nifra",
+    "typescript",
+    "ai",
+    "decisions",
+    "confidence",
+    "structured-output"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nifrajs/nifra-decisions.git",
+    "directory": "packages/decision"
+  },
+  "dependencies": {
+    "@nifrajs/core": "^3.3.0"
+  },
+  "devDependencies": {
+    "@nifrajs/schema": "^3.3.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "bun test"
+  }
+}
