@@ -18,7 +18,8 @@
     "typecheck": "tsc -b",
     "test": "bun test",
     "test:coverage": "bun test --coverage",
-    "pack:check": "bun run scripts/pack-check.ts"
+    "pack:check": "bun run scripts/pack-check.ts",
+    "release:check": "bun run check && bun run build && bun run pack:check && bun audit"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.14",
